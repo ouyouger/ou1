@@ -1,6 +1,6 @@
 
 //随机获取RGB类型的颜色
-function randomColor() {
+function randomRGBColor() {
     var r = Math.floor(Math.random() * 256);
     var g = Math.floor(Math.random() * 256);
     var b = Math.floor(Math.random() * 256);
@@ -24,12 +24,12 @@ function getFormateDate() {
     return format;
 }
 //获取n-m之间的整数
-function rnd(n, m) {
+function randomInt(n, m) {
     var random = Math.floor(Math.random() * (m - n + 1) + n);
     return random;
 }
 //获取一个随机的十六进制的颜色
-function randomColor1() {
+function randomHexColor() {
     var r = Math.floor(Math.random() * 256);
     var g = Math.floor(Math.random() * 256);
     var b = Math.floor(Math.random() * 256);
