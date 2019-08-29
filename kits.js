@@ -100,10 +100,9 @@ kits.saveLocalDataArray = function (key, obj) {
 
 // 向localStorage里面指定键(key)的数组数据追加一个数据对象
 kits.appendDataIntoArray = function (key, data) {
-  let data = this.getLocalStorageDataArray(data);
-  let arr = this.getLocalStorageDataArray(key);
-  arr.push(data)
-  this.saveLocalDataArray(key, arr)
+  datas.unshift(obj)
+  let json = JSON.stringify(datas)
+  localStorage.setItem('lol', json)
 
 }
 //根据id修改localStorage里面的指定键(key)的数组数据参数
@@ -123,7 +122,7 @@ kits.deleteLocalDataById = function (key, id) {
   let arr = this.getLocalStorageDataArray(key);
   arr.foreach((e, i) => {
     if (e.id === id) {
-      arr[i].splice(i, 1)
+      arr.splice(i, 1)
     }
   })
   this.saveLocalDataArray(key, arr);
