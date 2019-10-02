@@ -1,0 +1,180 @@
+.comm-head{
+width: 100%;
+height: 78px;
+overflow: visible;
+position: absolute;
+top:0;
+left: 0;
+z-index:11
+}
+.head-normal{
+    width:100%;
+    max-width:1358px;
+    min-width:1230px;
+    height:78px;
+    margin:0 auto;
+    position:relative;
+    z-index:10
+}
+.head-nav{
+float: left;
+width: 55%;
+height: 78px;
+box-sizing: border-box;
+margin-left: 30px;
+padding-top: 16px
+}
+.comm-head .logo{
+    float:left;
+    width:132px;
+    height:49px;
+    margin-top:10px
+}
+
+.head-nav>li{
+    float:left;
+    list-style:none;
+    width:20%;
+    height:78px;
+    text-align:center
+}
+.head-nav>li>a
+{
+    display:block;
+    width:100%;
+    height:100%
+}
+.head-nav-title{
+    display:block;
+    color:#fff;
+    font-size:18px;
+    letter-spacing:1px
+}
+
+.head-nav-subtitle{
+        display:block;
+        color:#aeaeae;
+        font-size:11px;
+        margin-top:-1px;
+        letter-spacing:1px
+    }
+ .head-userinfo-normal{
+        float:right;
+        width:244px;
+        height:78px;
+        position:relative;
+        z-index:3
+    }
+    .head-userinfo-avatar{
+        float:left;
+        width:48px;
+        height:48px;
+        position:relative;
+        margin-top:14px;
+        line-height:48px;
+        text-align:center;
+        font-size:0
+    }
+    .head-userinfo-avatar>img{
+        display:inline-block;
+        vertical-align:middle;
+        *zoom:1;
+        *display:inline;
+        width:36px;
+        height:auto;
+        border-radius:50%
+    }
+    .head-userinfo-avatar>span{display:block;
+        background-position:-216px -117px;
+        width:48px;
+        height:48px;
+        position:absolute;
+        top:0;
+        left:0
+    }
+    .head-userinfo-brief{
+        float:left;
+        margin-left:10px
+    }
+    .head-userinfo-brief>.login-unbindarea,.head-userinfo-brief>.unlogin{
+        color:#fefefe;
+        font-size:16px;
+        line-height:78px
+    }
+    /*! 官网通用顶部活动 start*/
+    .comm-topact{width:100%;
+        min-width:1230px;
+        height:360px;
+        overflow:hidden;
+        position:relative;
+        background:center top no-repeat;
+        -webkit-transition:height .6s,background,.6s;
+        transition:height .6s,background,.6s
+    }
+    .topact-big-img,.topact-small-img{position:absolute;
+        left:50%;
+        top:0;
+        width:1920px;
+        height:100%;
+        margin-left:-960px
+    }
+    .comm-topact .dark-mask{width:100%;
+        height:131px;
+        position:absolute;
+        left:0;
+        top:0;
+        background:url(../images/dark-jianbian-repeatx-0.png) repeat center top;
+        z-index:1
+    }
+    .comm-topact-inner{width:auto;
+        max-width:1358px;
+        min-width:1230px;
+        height:100%;
+        position:relative;
+        margin:0 auto
+    }
+    
+    .top-act-link{-webkit-transition:bottom .6s,background .3s;
+        transition:bottom .6s,background .3s;
+        display:block;
+        position:absolute;
+        z-index:1;
+        left:50%;
+        margin-left:-77px;
+        bottom:32px;
+        background-position:-216px -39px;width:160px;
+        height:40px;
+        font-size:14px;
+        -webkit-transition:filter .5s;
+        transition:filter .5s;filter:brightness(1);
+        -webkit-filter:brightness(1);
+        border:1px solid #b18733;
+        text-align: center;
+        line-height: 40px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #b18733
+    }
+    .top-act-link.left{
+        left:0;
+        margin-left:0
+    } 
+    .top-act-link:hover{
+        filter:brightness(1.15);
+        -webkit-filter:brightness(1.15)
+    } 
+    .herf-mask{
+        display:block;
+        width:100%;
+        height:100%;
+        position:absolute;
+        left:0;
+        top:0;
+        font-size:0
+    }
+    .herf-mask:after{
+        content: "\0020";
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 1000px;
+    }
